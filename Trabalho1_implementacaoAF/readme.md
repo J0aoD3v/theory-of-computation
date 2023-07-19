@@ -1,21 +1,39 @@
+# Implementação: Simulador de Autômatos Finitos
+
 Para construir o simulador de autômatos finitos em Java, você pode seguir algumas etapas essenciais. Abaixo, eu irei fornecer uma visão geral do processo de implementação. Lembre-se de que detalhes específicos podem variar de acordo com suas necessidades e preferências.
 
-Representação do Autômato:
+## Representação do Autômato:
+
 Defina uma classe para representar o autômato finito. Essa classe pode conter campos para o estado inicial, estados finais e as transições. As transições podem ser representadas como um HashMap, onde as chaves são pares (estado atual, símbolo de entrada) e os valores são os estados de destino.
-Leitura do Arquivo JSON:
+
+## Leitura do Arquivo JSON:
+
 Utilize uma biblioteca JSON em Java (por exemplo, Gson) para ler o arquivo JSON que contém a especificação do autômato. A biblioteca permitirá transformar os dados do arquivo JSON em objetos Java.
-Leitura do Arquivo CSV:
+
+## Leitura do Arquivo CSV:
+
 Para ler o arquivo CSV contendo as entradas de teste, você pode usar classes Java como BufferedReader e FileReader para realizar a leitura linha a linha.
-Simulação do Autômato:
+
+## Simulação do Autômato:
+
 Implemente um método para simular o autômato finito a partir das entradas de teste. O método pode percorrer cada entrada de teste, passando por cada símbolo e atualizando o estado atual de acordo com as transições do autômato.
-Medição do Tempo de Execução:
+
+## Medição do Tempo de Execução:
+
 Para medir o tempo de execução de cada simulação, você pode utilizar o método System.currentTimeMillis() para obter o tempo antes e depois da simulação.
-Escrita do Arquivo de Saída:
+
+## Escrita do Arquivo de Saída:
+
 Crie um arquivo de saída (no formato CSV) e armazene os resultados da simulação (palavra de entrada, resultado esperado, resultado obtido e tempo de execução).
-Interface de Linha de Comando:
+
+## Interface de Linha de Comando:
+
 Utilize a classe "args" para receber os parâmetros necessários a partir da linha de comando. Isso permitirá que você invoque sua ferramenta passando os arquivos de entrada e saída.
-Organização do Código:
+
+## Organização do Código:
+
 Divida o código em classes e métodos bem definidos para torná-lo mais organizado e legível. Isso facilitará a manutenção e reutilização do código.
+
 Aqui está um esqueleto básico do código para ajudá-lo a começar:
 
 ```java
